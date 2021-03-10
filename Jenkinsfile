@@ -31,6 +31,7 @@ node {
         /* To builds the dockerimage */
         //update your ECR registry URI
        //me  app = docker.build("843554782143.dkr.ecr.ap-south-1.amazonaws.com/ischool-ui")
-       sh 'sudo sed -i 's/latest/build-v${BUILD_NUMBER}/g' deployment.yaml && kubectl apply -f deployment.yml'
+       //sh 'sudo sed -i 's/latest/build-v${BUILD_NUMBER}/g' deployment.yaml && kubectl apply -f deployment.yml'
+       sh 'kubectl apply -f deployment.yml'
     }
 }
