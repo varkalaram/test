@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: test1
-          image: '843554782143.dkr.ecr.ap-south-1.amazonaws.com/test:latest'
+          image: '993397683587.dkr.ecr.ap-south-1.amazonaws.com/test:latest'
           ports:
             - containerPort: 80
           resources:
@@ -44,7 +44,8 @@ spec:
   ports:
     - port: 80
       targetPort: 80
+      nodePort: 31111
       protocol: TCP
   selector:
     app: test1
-  type: LoadBalancer
+  type: NodePort
