@@ -1,6 +1,6 @@
 repos:
-        #-   repo: https://github.com/pre-commit/pre-commit-hooks
--   repo: https://github.com/varkalaramalingam/test
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+        #-   repo: https://github.com/varkalaramalingam/test
     rev: v2.3.0
     hooks:
     -   id: check-yaml
